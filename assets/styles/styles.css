@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  justify-content: space-around;
+  padding: 30px 20px;
+  z-index: 10;
+  transition: 0.7s;
+}
+header nav #logo {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+header nav ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  position: relative;
+  margin: 0px 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+header nav .menu::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s ease-out;
+}
+header nav .menu:hover::before {
+  width: 100%;
+}
+header nav.bajar {
+  background-color: black;
+}
+header video {
+  width: 100%;
+  z-index: 10;
+}
+header .perfil {
+  width: 100%;
+  height: 100%;
+  top: 42%;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  z-index: 8;
+}
+header .perfil .btn-cv {
+  padding: 10px;
+  border: solid 2px white;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+header .perfil .btn-cv:hover {
+  background-color: white;
+  box-shadow: 0 0 5px white, 0 0 12px white, 0 0 13px white;
+  color: black;
+  transition: 0.5s;
+}
+
+#sobre-mi {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 12px #979696;
+  font-family: "Roboto", sans-serif;
+}
+#sobre-mi .caja1 {
+  display: table-cell;
+  padding: 30px;
+  width: 55%;
+}
+#sobre-mi .caja1 h2 {
+  text-align: center;
+}
+#sobre-mi .caja2 {
+  display: table-cell;
+  padding: 20px;
+}
+#sobre-mi .caja2 h2 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.educacion {
+  padding: 20px;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  box-shadow: 0 0 12px #979696;
+  font-family: "Roboto", sans-serif;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.educacion .instituto {
+  padding: 20px;
+}
+.educacion .descripcion {
+  margin: 10px;
+  text-align: justify;
+}
+.educacion .descripcion .fechas {
+  color: #888787;
+}
+.educacion .descripcion p {
+  margin-top: 3px;
+}
+
+.fila1 {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+  justify-content: center;
+}
+.fila1 .skill-image {
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  margin: 20px;
+}
+
+.fila2 {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+  justify-content: center;
+}
+.fila2 .skill-image {
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  margin: 20px;
+}
+
+.fila3 {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+  justify-content: center;
+}
+.fila3 .skill-image {
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  margin: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+}
+footer img {
+  width: 40px;
+  margin: 10px;
+}
+footer .redes:hover {
+  width: 55px;
+  margin: 10px;
+  transition: 0.6s;
+}
+
+/*# sourceMappingURL=styles.css.map */
