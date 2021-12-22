@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="/Portfolio/assets/styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -47,7 +48,7 @@
         <div id="Sobre-mi"></div>
 
         <br>
-        <article id="sobre-mi">
+        <article id="sobre-mi" data-aos="fade-up">
             <div class="caja1">
                 <h2>Sobre mí</h2>
                 <hr><br>
@@ -74,7 +75,7 @@
             <h1>Educacion</h1>
             <br><br>
 
-            <div class="educacion">
+            <div data-aos="fade-right" class="educacion">
                 <div class="instituto">
                     <img src="/Portfolio/assets/images/SoyHenry.jpg" alt="SoyHenry" width="155px">
                 </div>
@@ -86,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="educacion">
+            <div data-aos="fade-right" class="educacion">
                 <div class="instituto">
                     <img src="/Portfolio/assets/images/UBA.jpg" alt="UBA" width="155px">
                 </div>
@@ -97,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="educacion">
+            <div data-aos="fade-right" class="educacion">
                 <div class="instituto">
                     <img src="/Portfolio/assets/images/InstitutoSantaCatalina.webp" alt="" width="185px"> 
                 </div>
@@ -116,7 +117,7 @@
 
             <div class="skills">
 
-                <div class="fila1">
+                <div class="fila1" data-aos="zoom-in">
 
                     <div class="Photoshop">
                         <img src="/Portfolio/assets/images/Skills Logos/Photoshop Logo negro.svg" alt="" class="skill-image">
@@ -140,7 +141,7 @@
 
                 </div>
 
-                <div class="fila2">
+                <div class="fila2" data-aos="zoom-in">
 
                     <div class="Sass">
                         <img src="/Portfolio/assets/images/Skills Logos/Sass-Logo-negro.svg" alt="" class="skill-image">
@@ -164,7 +165,7 @@
     
                 </div>
 
-                <div class="fila3">
+                <div class="fila3" data-aos="zoom-in">
 
                     <div class="Git">
                         <img src="/Portfolio/assets/images/Skills Logos/Git Logo negro.svg" alt="" class="skill-image">
@@ -208,5 +209,9 @@
     </footer>
 
     <script src="/Portfolio/assets/Js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
