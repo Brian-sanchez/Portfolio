@@ -163,6 +163,7 @@ h2 {
   text-align: center;
   width: 150px;
   margin: 20px;
+  filter: drop-shadow(3px 2px 2px gray);
 }
 
 .fila2 {
@@ -176,6 +177,7 @@ h2 {
   text-align: center;
   width: 150px;
   margin: 20px;
+  filter: drop-shadow(3px 2px 2px gray);
 }
 
 .fila3 {
@@ -189,6 +191,7 @@ h2 {
   text-align: center;
   width: 150px;
   margin: 20px;
+  filter: drop-shadow(3px 2px 2px gray);
 }
 
 footer {
