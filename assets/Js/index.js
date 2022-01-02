@@ -1,3 +1,10 @@
+const Toggle = document.querySelector(".toggle");
+const Menu = document.querySelector(".menu");
+
+Toggle.addEventListener("click", () => {
+    Menu.classList.toggle("menu_visible");
+});
+
 window.addEventListener("scroll", () => {
     let nav = document.querySelector("nav");
     nav.classList.toggle("bajar", window.scrollY>0);

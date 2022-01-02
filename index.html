@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/Portfolio/assets/images/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f9a736bb39.js" crossorigin="anonymous"></script>
+    <script defer src="/Portfolio/assets/Js/index.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -18,20 +20,21 @@
 
         <nav>
 
-            <a href="#Inicio" class="animate__animated animate__backInLeft" id="logo">BRIAN SANCHEZ</a>
-             <ul class="animate__animated animate__backInRight">
-                <li><a href="#Inicio" class="menu">Inicio</a></li>
-                <li><a href="#Sobre-mi" class="menu">Sobre mí</a></li>
-                <li><a href="#Educacion" class="menu">Educacion</a></li>
-                <li><a href="#Skills" class="menu">Skills</a></li>
-                <!-- <li><a href="#Portfolio">Portfolio</a></li> -->
+            <a href="#Inicio" id="logo">BRIAN SANCHEZ</a>
+            <button class="toggle"><i class="fas fa-bars"></i></button>
+             <ul class="menu">
+                <li><a href="#Inicio" class="pagina">Inicio</a></li>
+                <li><a href="#Sobre-mi" class="pagina">Sobre mí</a></li>
+                <li><a href="#Educacion" class="pagina">Educacion</a></li>
+                <li><a href="#Skills" class="pagina">Skills</a></li>
+                <!-- <li><a href="#Portfolio" class="pagina">Portfolio</a></li> -->
              </ul>
 
         </nav>
 
         <div class="perfil">
-            <h1 class="animate__animated animate__bounce">Brian Sanchez</h1>
-            <h4 class="animate__animated animate__zoomInDown">Full Stack Web Developer</h4>
+            <h1 class="animate__animated animate__bounce" id="nombre">Brian Sanchez</h1>
+            <h4 class="animate__animated animate__zoomInDown" id="formacion">Full Stack Web Developer</h4>
             <br>
             <a href="/Portfolio/assets/pdf/Brian Sanchez.pdf" class="btn-cv" download="Brian Sanchez.pdf">Descargar CV</a>
         </div>
@@ -73,19 +76,19 @@
             <h1>Educacion</h1>
             <br><br>
 
-            <div data-aos="fade-right" class="educacion">
+            <div data-aos="fade-right" class="educacion" id="Henry">
                 <div class="instituto">
                     <img src="/Portfolio/assets/images/SoyHenry.jpg" alt="SoyHenry" width="155px">
                 </div>
                 <div class="descripcion">
                     <h3>SoyHenry</h3>
-                    <p class="fechas">2021 - 2022</p>
+                    <p class="fechas">Oct 2021 - Feb 2022</p>
                     <p>Bootcamp intensivo</p>
                     <p>Bootcamp de desarrollo web intensivo, compuesto por mas de 700hs en donde se abordaron 4 módulos correspondientes a JavaScript Avanzado, Front End(React-Redux, HTML5 y CSS), Back End(Node JS, Express) y Base de datos (PostgreSQL y Sequelize). </p>
                 </div>
             </div>
 
-            <div data-aos="fade-right" class="educacion">
+            <div data-aos="fade-right" class="educacion" id="UBA">
                 <div class="instituto">
                     <img src="/Portfolio/assets/images/UBA.jpg" alt="UBA" width="155px">
                 </div>
@@ -96,7 +99,7 @@
                 </div>
             </div>
 
-            <div data-aos="fade-right" class="educacion">
+            <div data-aos="fade-right" class="educacion" id="santaCatalina">
                 <div class="instituto">
                     <img src="/Portfolio/assets/images/InstitutoSantaCatalina.webp" alt="" width="185px"> 
                 </div>
@@ -117,22 +120,22 @@
 
                 <div class="fila1" data-aos="zoom-in">
 
-                    <div class="Photoshop">
+                    <div id="Photoshop" class="mover-derecha">
                         <a href="https://www.adobe.com/la/products/photoshop.html" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/Photoshop Logo negro.svg" alt="" class="skill-image"></a>
                         <!-- <img src="/assets/images/Skills Logos/Photoshop Logo.svg" alt="" class="skill-image2"> -->
                     </div>
     
-                    <div class="JS">
+                    <div id="JS" class="mover-derecha">
                         <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/JavaScript Logo negro.svg" alt="" class="skill-image"></a>
                         <!-- <img src="/assets/images/Skills Logos/JavaScript Logo.svg" alt="" class="skill-image2"> -->
                     </div>
     
-                    <div class="React">
+                    <div id="React" class="mover-derecha">
                         <a href="https://es.reactjs.org" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/React Logo negro .svg" alt="" class="skill-image"></a>
                         <!-- <img src="/assets/images/Skills Logos/React Logo.svg" alt="" class="skill-image2"> -->
                     </div>
     
-                    <div class="Express">
+                    <div id="Express" class="mover-derecha">
                         <a href="https://expressjs.com/es/" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/Express Logo negro.svg" alt="" class="skill-image"></a>
                         <!-- <img src="/assets/images/Skills Logos/Express Logo.svg" alt="" class="skill-image2"> -->
                     </div>
@@ -141,22 +144,22 @@
 
                 <div class="fila2" data-aos="zoom-in">
 
-                    <div class="Sass">
+                    <div id="Sass" class="mover-derecha">
                         <a href="https://sass-lang.com" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/Sass-Logo-negro.svg" alt="" class="skill-image"></a>
                        <!-- <img src="/assets/images/Skills Logos/Sass-Logo.svg" alt="" class="skill-image2"> -->
                     </div>
     
-                    <div class="Node">
+                    <div id="Node" class="mover-derecha">
                         <a href="https://nodejs.org/es/" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/Node JS Logo negro.svg" alt="" class="skill-image"></a>
                        <!-- <img src="/assets/images/Skills Logos/Node JS Logo.svg" alt="" class="skill-image2"> -->
                     </div>
     
-                    <div class="SQL">
+                    <div id="SQL" class="mover-derecha">
                         <a href="https://developer.mozilla.org/es/docs/Glossary/SQL" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/SQL logo negro.svg" alt="" class="skill-image"></a>
                        <!-- <img src="/assets/images/Skills Logos/SQL logo.svg" alt="" class="skill-image2"> -->
                     </div>
     
-                    <div class="Redux">
+                    <div id="Redux" class="mover-derecha">
                         <a href="https://es.redux.js.org" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/Redux Logo negro.svg" alt="" class="skill-image"></a>
                        <!-- <img src="/assets/images/Skills Logos/Redux Logo.svg" alt="" class="skill-image2"> -->
                     </div>
@@ -165,22 +168,22 @@
 
                 <div class="fila3" data-aos="zoom-in">
 
-                    <div class="Git">
+                    <div id="Git" class="mover-derecha">
                         <a href="https://git-scm.com" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/Git Logo negro.svg" alt="" class="skill-image"></a>
                        <!-- <img src="/assets/images/Skills Logos/Git Logo.svg" alt="" class="skill-image2"> -->
                     </div>
     
-                    <div class="Mongo">
+                    <div id="Mongo" class="mover-derecha">
                         <a href="https://www.mongodb.com/cloud/atlas/lp/try2?utm_content=controlhterms&utm_source=google&utm_campaign=gs_americas_argentina_search_core_brand_atlas_desktop&utm_term=mongo%20db&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624305&adgroup=115749712783&gclid=CjwKCAiAtouOBhA6EiwA2nLKH5ex4tjYdMBcFZDrpIO9aKCC-OvRXDRdlE-JiKjd-Nc7AohsiI2FOhoC8RUQAvD_BwE" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/Mongo DB Logo negro .svg" alt="" class="skill-image"></a>
                        <!-- <img src="/assets/images/Skills Logos/Mongo DB Logo.svg" alt="" class="skill-image2"> -->
                     </div>
 
-                    <div class="HTML">
+                    <div id="HTML" class="mover-derecha">
                         <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/HTML Logo negro.svg" alt="" class="skill-image"></a>
                        <!-- <img src="/assets/images/Skills Logos/HTML Logo.svg" alt="" class="skill-image2"> -->
                     </div>
     
-                    <div class="CSS">
+                    <div id="CSS" class="mover-derecha">
                         <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blanck"><img src="/Portfolio/assets/images/Skills Logos/CSS Logo negro.svg" alt="" class="skill-image"></a>
                        <!-- <img src="/assets/images/Skills Logos/CSS Logo.svg" alt="" class="skill-image2"> -->
                     </div>
@@ -226,7 +229,6 @@
         <a href="https://www.linkedin.com/in/brian-sanchez-2003" target="_blanck" class="redes"><img src="/Portfolio/assets/images/linkedin y git hub/Linkedin logo.svg" alt=""></a>
     </footer>
 
-    <script src="/Portfolio/assets/Js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

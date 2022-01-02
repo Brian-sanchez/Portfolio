@@ -5,6 +5,7 @@ $fuente-principal: 'Roboto', sans-serif;
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 h1 {
@@ -36,6 +37,17 @@ header {
             font-family: $fuente-principal;
         }
 
+        .toggle {
+            color: $color-principal;
+            background: none;
+            border: none;
+            font-size: 30px;
+            padding: 0 20px;
+            cursor: pointer;
+
+            display: none;
+        }
+
         ul {
             position: relative;
             display: flex;
@@ -55,7 +67,7 @@ header {
             }
         }
 
-        .menu::before {
+        .pagina::before {
             content: "";
             height: 3px;
             width: 0%;
@@ -66,7 +78,7 @@ header {
             transition: 0.4s ease-out;
         }
 
-        .menu:hover::before {
+        .pagina:hover::before {
             width: 100%;
         }
     }
@@ -111,6 +123,7 @@ header {
         }
     }
 }
+
 
 #sobre-mi {
     padding: 20px;
@@ -241,6 +254,394 @@ footer {
         transition: 0.6s;
     }
     
+}
+
+@media (max-width: 544px) {
+
+    header {
+  
+        nav {
+    
+            #logo {
+                font-size: 20px;
+                padding-top: 5px;
+            }
+    
+            .toggle {
+                display: block;
+            }
+    
+            .menu {
+                position: fixed;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: $color-secundario;
+                left: 100%;
+                top: 80px;
+                width: 100%;
+                transition: 0.3s;
+                overflow-y: auto;
+        
+                li {
+                    list-style: none;
+                    margin: 20px;
+                }
+            }
+
+            .menu_visible {
+                left: 0;
+            }
+        }
+
+        .perfil {
+
+            #nombre {
+                font-size: 30px;
+            }
+
+            #formacion {
+                font-size: 20px;
+            }
+
+            video {
+                width: 100%;
+            }
+
+        }
+
+    
+    }
+
+    #sobre-mi {
+        padding: 5%;
+        margin: 5%;
+        border-radius: 4px;
+        box-shadow: 0 0 12px rgb(151, 150, 150);
+        font-family: $fuente-principal;
+    
+        .caja1 {
+            display: block;
+            padding: 5%;
+            width: 90%;
+            align-items: center;
+            text-align: center;
+            
+            h2 {
+                text-align: center;
+            }
+        }
+    
+        .caja2 {
+            display: block;
+            padding: 5%;
+    
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+    .educacion {
+        margin-top: 7%;
+        margin-bottom: 7%;
+        font-family: $fuente-principal;
+        display: inline-block;
+    
+        .instituto {
+            padding: 5%;
+        }
+    
+        .descripcion {
+            margin: 3%;
+            text-align: justify;
+    
+            .fechas {
+                color: rgb(136, 135, 135);
+            }
+    
+            p {
+                margin-top: 1%;
+            }
+    
+        }
+    
+    }
+
+    #Henry {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #UBA {
+        margin-left: 23%;
+        margin-right: 23%;
+    }
+
+    #santaCatalina {
+        margin-left: 19%;
+        margin-right: 19%;
+    }
+
+    .fila1 {
+        display: inline-block;
+    
+        .skill-image {
+            width: 150px;
+            margin: 20px;
+            filter: none;
+        }
+    }
+    
+    .fila2 {
+        display: inline-block;
+        margin-top: -40px;
+    
+        .skill-image {
+            width: 150px;
+            margin: 20px;
+            filter: none;
+        }
+    }
+    
+    .fila3 {
+        display: inline-block;
+        margin-top: -40px;
+        
+        .skill-image {
+            filter: none;
+        }
+    }
+
+    .mover-derecha {
+        display: inline-block;
+        margin-left: 6%;
+    }
+
+
+
+}
+
+@media (max-width: 516px) {
+
+    .fila1 {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .fila2 {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .fila3 {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .mover-derecha {
+        margin-left: 2.5%;
+    }
+}
+
+@media (max-width: 505px) {
+
+    .skills {
+
+        .fila1 {
+            display: inline-block;
+            margin-left: 19%;
+    
+            .skill-image {
+                width: 120px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    
+        .fila2 {
+            display: inline-block;
+            margin-left: 19%;
+    
+            .skill-image {
+                width: 120px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    
+        .fila3 {
+            display: inline-block;
+            margin-left: 19%;
+    
+            .skill-image {
+                width: 120px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    
+        .mover-derecha {
+            display: inline-flex;
+        }
+
+    }
+    
+}
+
+@media (max-width: 473px) {
+
+    .skills {
+        margin-right: 9%;
+    }
+}
+
+@media (max-width: 471px) {
+    .btn-cv {
+        display: none;
+    }
+}
+
+@media (max-width: 462px) {
+
+    .skills {
+        margin: 0;
+        margin-left: -19px;
+    }
+}
+
+@media (max-width: 428px) {
+
+    .skills {
+        margin: 0;
+        margin-left: -6%;
+    }
+}
+
+@media (max-width: 428px) {
+    
+    .skills {
+        margin: 0%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .skills {
+        .fila1{
+            margin-left: 13%;
+        }
+
+        .fila2 {
+            margin-left: 13%;
+        }
+
+        .fila3 {
+            margin-left: 13%;
+        }
+    }
+}
+
+@media (max-width: 388px) {
+
+    .skills {
+        .fila1{
+            margin-left: 10%;
+        }
+
+        .fila2 {
+            margin-left: 10%;
+        }
+
+        .fila3 {
+            margin-left: 10%;
+        }
+    }
+}
+
+@media (max-width: 373px) {
+
+    .skills {
+        .fila1{
+            margin-left: 9%;
+        }
+
+        .fila2 {
+            margin-left: 9%;
+        }
+
+        .fila3 {
+            margin-left: 9%;
+        }
+    }
+}
+
+@media (max-width: 369px) {
+
+    .skills {
+        .fila1{
+            margin-left: 8%;
+        }
+
+        .fila2 {
+            margin-left: 8%;
+        }
+
+        .fila3 {
+            margin-left: 8%;
+        }
+    }
+}
+
+@media (max-width: 364px) {
+
+    .skills {
+        .fila1{
+            margin-left: 7%;
+        }
+
+        .fila2 {
+            margin-left: 7%;
+        }
+
+        .fila3 {
+            margin-left: 7%;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+
+    .skills {
+        .fila1{
+            margin-left: 6%;
+        }
+
+        .fila2 {
+            margin-left: 6%;
+        }
+
+        .fila3 {
+            margin-left: 6%;
+        }
+    }
+}
+
+@media (max-width: 355px) {
+
+    .skills {
+        .fila1{
+            margin-left: 5%;
+        }
+
+        .fila2 {
+            margin-left: 5%;
+        }
+
+        .fila3 {
+            margin-left: 5%;
+        }
+    }
 }
 
 
